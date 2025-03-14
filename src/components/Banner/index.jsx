@@ -6,11 +6,12 @@ import presente from '../../../public/assets/icons/presente.webp';
 import pasta from '../../../public/assets/icons/pasta.webp';
 import tempo from '../../../public/assets/icons/tempo.webp';
 import editavel from '../../../public/assets/icons/editavel.webp';
+import banner from '../../../public/assets/img/banner-bg.webp';
 
 import Botao from '../Botao';
 
 const BannerContainer = styled.section`
-  background-image: url('../../../public/assets/img/banner-bg.webp');
+  background: url(${banner});
   background-size: cover;
   background-repeat: no-repeat;
   aspect-ratio: 1920 / 663;
