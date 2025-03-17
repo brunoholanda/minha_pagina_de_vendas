@@ -4,6 +4,7 @@ import Banner from '../../components/Banner'
 import SessaoDois from '../../components/SessaoDois'
 import SessaoTres from '../../components/SessaoTres'
 import SessaoQuatro from '../../components/SessaoQuatro'
+import SessaoSeis from '../../components/SessaoSeis'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <SessaoDois />
         <SessaoTres />
         <SessaoQuatro />
+        <SessaoSeis />
     </div>
   )
 }
