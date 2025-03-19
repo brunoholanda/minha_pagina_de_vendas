@@ -6,6 +6,7 @@ import SessaoTres from '../../components/SessaoTres'
 import SessaoQuatro from '../../components/SessaoQuatro'
 import SessaoCinco from '../../components/SessaoCinco'
 import SessaoSeis from '../../components/SessaoSeis'
+import SessaoSete from '../../components/SessaoSete'
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         <SessaoQuatro />
         <SessaoCinco />
         <SessaoSeis />
+        <SessaoSete />
+
     </div>
   )
 }
