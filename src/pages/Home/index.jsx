@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import Cabecalho from '../../components/Cabecalho'
 import Banner from '../../components/Banner'
-import SessaoDois from '../../components/SessaoDois'
-import SessaoTres from '../../components/SessaoTres'
-import SessaoQuatro from '../../components/SessaoQuatro'
-import SessaoCinco from '../../components/SessaoCinco'
-import SessaoSeis from '../../components/SessaoSeis'
-import SessaoSete from '../../components/SessaoSete'
-import SessaoOito from '../../components/SessaoOito'
+import LoadingSpinner from '../../components/Loading'
+
+const SessaoDois = lazy(() => import('../../components/SessaoDois'))
+const SessaoTres = lazy(() => import('../../components/SessaoTres'))
+const SessaoQuatro = lazy(() => import('../../components/SessaoQuatro'))
+const SessaoCinco = lazy(() => import('../../components/SessaoCinco'))
+const SessaoSeis = lazy(() => import('../../components/SessaoSeis'))
+const SessaoSete = lazy(() => import('../../components/SessaoSete'))
+const SessaoOito = lazy(() => import('../../components/SessaoOito'))
 
 export default function Home() {
   return (
     <div>
-        <Cabecalho />
-        <Banner />
+      <Cabecalho />
+      <Banner />
+      <Suspense fallback={<LoadingSpinner />}>
         <SessaoDois />
         <SessaoTres />
         <SessaoQuatro />
@@ -21,6 +24,7 @@ export default function Home() {
         <SessaoSeis />
         <SessaoSete />
         <SessaoOito />
+      </Suspense>
     </div>
   )
 }
