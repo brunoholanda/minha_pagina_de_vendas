@@ -118,19 +118,19 @@ export default function Banner() {
             </BannerContainer>
             <BannerRodape>
                 <div className='vantagens'>
-                    <img src={presente} alt="icone de presente" />
+                    <img loading='lazy' src={presente} alt="icone de presente" />
                     <p>BÔNUS ESPECIAL</p>
                 </div>
                 <div className='vantagens'>
-                    <img src={pasta} alt="Icone de pasta" />
+                    <img loading='lazy' src={pasta} alt="Icone de pasta" />
                     <p>ACESSO IMEDIATO</p>
                 </div>
                 <div className='vantagens'>
-                    <img src={tempo} alt="icone de tempo" />
+                    <img loading='lazy' src={tempo} alt="icone de tempo" />
                     <p>PRODUTO VITALÍCIO</p>
                 </div>
                 <div className='vantagens'>
-                    <img src={editavel} alt="icone editavel" />
+                    <img loading='lazy' src={editavel} alt="icone editavel" />
                     <p>100% EDITÁVEL</p>
                 </div>
             </BannerRodape>
