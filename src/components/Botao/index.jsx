@@ -10,6 +10,7 @@ const BotaoPadrao = styled.button`
     font-weight: 700;
     color: #ffffff;
     border: none;
+    cursor: pointer;
 
     &:hover {
         background: linear-gradient(87.25deg, #0a46c7 0%, #01b4fb 33.33%, #064bdf 66.67%, #02b7ff 100%);
