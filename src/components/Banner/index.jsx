@@ -60,7 +60,7 @@ const Conteudo = styled.div`
         img {
             margin-top: 8px;
             width: 181px;
-            height: auto;
+            height: 22px;
         }
     }
 
