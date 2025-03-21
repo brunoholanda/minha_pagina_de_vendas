@@ -16,6 +16,11 @@ const SessaoSeteContainer = styled.section`
 
     .comprar {
 
+        img {
+            width: 366px;
+            height: 16px;
+        }
+
         button {
             width: 490px;
             margin-bottom: 15px;
@@ -34,7 +39,8 @@ const CardContainer = styled.div`
 `;
 
 const CardImage = styled.img`
-    width: 100%;
+    width: 426px;
+    height: 284px;
     border-radius: 10px;
     margin-bottom: 15px;
 `;
